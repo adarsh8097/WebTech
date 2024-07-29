@@ -1,0 +1,373 @@
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url('fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+   
+    border-top: 2px solid #080808;
+    border-bottom: 2px solid #080808;
+    
+    
+}
+
+.logo-container{
+    margin-top: 10px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+
+.logo img{
+  
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.logo2{
+   letter-spacing: 13px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #080808;
+    font-weight: bold;
+}
+
+nav a.active {
+    color: #e58d41;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 60vh;
+    margin-top: 5px;
+    margin-top: 3rem;
+   
+}
+
+
+
+    .box {
+        text-align:justify ;
+        margin: 0 3rem 0 3rem;
+        font-family: 'Roboto-regular';
+       }
+
+
+.float {
+    float: right; 
+    margin-left: 15px;
+     shape-outside: none;
+  }
+  
+  .float img {
+    width: 200px;
+    display: block;
+  }
+
+.welcome-text, .welcome-text1 {
+    flex: 1;
+    margin: 0;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+
+.welcome, .history {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.welcom-demo{
+  
+    font-size: 2.5rem;
+    color: #080808;
+    font-family: 'Roboto-bold';
+
+}
+.to::after{
+   content:"";
+   display: block;
+   width: 5%;
+   height: 2px;
+   background-color: #000;
+   margin-top: 8px;
+   margin-left: 48%;
+
+}
+
+
+
+.welcome p, .history p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.read-more button {
+  
+    color: #080808;
+    border: 1px solid #080808;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: white;
+    font-weight: 600;
+    padding: 15px;
+    width: 180px;
+    border-radius: 0.5px;
+    font-family: 'Roboto-bold';
+
+}
+
+.showcase {
+    text-align: center;
+    padding: 50px 20px;
+    /* background-color: #f8f8f8; */
+}
+
+
+
+.showcase .images {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.showcase .image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.showcase .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.history-demo1{
+     /* margin-top: 20px; */
+     padding: 0 50px 0 50px;
+     font-family: 'Roboto-regular';
+     
+}
+.history-demo{
+    text-align: justify;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.logo1{
+     display: flex;
+     justify-content: space-between;
+     display: none;
+}
+
+.logo1 .logo-dp-mob {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.logo1 .nav-logo {
+    width: 30px;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav li {
+        margin: 10px 15px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+      
+    }
+    .showcase .images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .showcase .image {
+        width: 120px;
+        height: 120px;
+    }
+    nav {
+         display: none;
+    }
+    .logo {
+         display: none;
+    }
+    .logo1 {
+        display: flex;
+        justify-content: space-between;
+        /* display: none; */
+    }
+    .welcome-intro {
+        flex-direction: column; /* Stack items vertically on tablet and mobile view */
+        align-items: center; /* Center items */
+    }
+
+    .welcome-text, .welcome-text1 {
+        margin-right: 0;
+        text-align: justify;
+    }
+
+    .welcome-intro img {
+        max-width: 100%; /* Allow image to scale with container */
+        margin-top: 20px; /* Add some space between text and image */
+    }
+
+    .showcase .images {
+        flex-direction: row; /* Ensure images stay in a row */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+        justify-content: center; /* Align images to the start */
+    }
+
+    .showcase .image {
+        flex: 0 0 auto; /* Prevent images from shrinking */
+        margin-right: 20px; /* Add space between images */
+    }
+
+    .showcase .image:last-child {
+        margin-right: 0; /* Remove space after the last image */
+    }
+    span{
+        justify-content: center;
+    }
+   
+
+   .hero img{
+    height: 40vh;
+   }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+
+    }
+
+    .hero img{
+        height: 40vh;
+    }
+    nav li {
+        margin: 5px 10px;
+    }
+    .welcome, .history {
+        padding: 30px 10px;
+    }
+    .read-more button {
+        padding: 8px 16px;
+    }
+    .showcase .images {
+        display: flex;
+         flex-direction: row;
+         flex-wrap: wrap; /* 1 item per row for smaller mobile screens */
+        gap: 20px; 
+       
+        justify-content: center;/* Space between items */
+    }
+    
+  
+    .showcase .image {
+        width: 100px; /* Adjust image size for mobile view */
+        height: 100px;
+    }
+
+    .box {
+        text-align:justify ;
+        margin: 0 1rem 0 1rem;
+        font-size: 20px;
+        /* justify-content: center; */
+
+      }
+
+      .history-demo1{
+        /* margin-top: 20px; */
+        padding: 0 15px 0 15px;
+        
+   }
+
+   .welcom-demo{
+     font-size: 20px;
+   }
+      
+}
